@@ -4,7 +4,7 @@ library(rvest)
 library(purrr)
 library(tibble)
 library(tm)
-library(gptstudio)
+
 
 
 
@@ -61,6 +61,7 @@ solo_letras <- gsub("[^[:alnum:]]", " ", solo_letras)
 
 # Tokenización de palabras
 solo_palabras <- strsplit(solo_letras, '\\s+')[[1]]
+
 
 
 
